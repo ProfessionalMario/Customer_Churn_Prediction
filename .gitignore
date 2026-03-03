@@ -7,8 +7,12 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+*.pkl
+*.joblib
+models/
+data/raw/
 .Python
-.vscode
+.vscode/
 build/
 develop-eggs/
 dist/
