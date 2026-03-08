@@ -2,14 +2,19 @@ import logging
 from src.utils.exception import AppException
 import joblib
 import pandas as pd
-
+import os
 logger = logging.getLogger(__name__)
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # src/
+MODEL_PATH = os.path.join(BASE_DIR, "models", "churn_model.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "models", "scaler.pkl")
+FEATURES_PATH = os.path.join(BASE_DIR, "models", "model_features.pkl")
 
-# Load model, scaler, and training columns
-model = joblib.load("models/churn_model.pkl")
-scaler = joblib.load("models/scaler.pkl")
-model_features = joblib.load("models/model_features.pkl")
+model = joblib.load(MODEL_PATH)
+scaler = joblib.load(SCALER_PATH)
+model_features = joblib.load(FEATURES_PATH)
+
+
 num_cols = ["SeniorCitizen", "tenure", "MonthlyCharges"]
 
 
