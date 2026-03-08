@@ -63,6 +63,10 @@ def home(request: Request):
             status_code=500
         )  
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 # -----------------------------
 # Processing the input data and displaying the results. 
 # -----------------------------

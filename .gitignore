@@ -8,6 +8,7 @@ __pycache__/
 
 
 # Distribution / packaging
+logs/*.log
 *.pkl
 *.joblib
 models/

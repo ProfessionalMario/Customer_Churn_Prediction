@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+.git
+.gitignore
+.vscode
+notebooks
+data/raw
+logs
