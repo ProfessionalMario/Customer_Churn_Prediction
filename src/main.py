@@ -8,6 +8,7 @@ from src.utils.logger import setup_logger
 from src.utils.exception import AppException
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
+import uvicorn
 # -----------------------------
 # Initialize logging
 # -----------------------------
@@ -99,3 +100,8 @@ def predict(data: CustomerData):
             content={"error": "Prediction failed"}
         )
     
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # use Render's PORT or default 8000
+    uvicorn.run(app, host="0.0.0.0", port=port)
