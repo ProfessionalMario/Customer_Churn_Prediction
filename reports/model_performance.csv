@@ -1,0 +1,4 @@
+Model,Baseline Score,Tuned Score
+Logistic Regression,0.834,0.844576352166625
+Random Forest,0.814,0.8450565646586281
+XGBoost,0.805cls,0.8489472576060638
