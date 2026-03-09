@@ -9,9 +9,7 @@ __pycache__/
 
 # Distribution / packaging
 logs/*.log
-*.pkl
 *.joblib
-models/
 data/raw/
 .ipynb_checkpoints/
 .Python
