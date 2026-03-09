@@ -99,8 +99,8 @@ Key outputs include:
 Example artifacts:
 
 reports/
-- Confusion_matrix.png ![Alt text](CUSTOMER_CHURN_PREDICTION\reports\Confusion_matrix.png)
-- feature_importance.png ![Alt text](CUSTOMER_CHURN_PREDICTION\reports\feature_importance.png)
+- Confusion_matrix.png ![Alt text](reports/Confusion_matrix.png)
+- feature_importance.png ![Alt text](reports/feature_importance.png)
 - model_performance.csv 
 
 
@@ -124,13 +124,13 @@ Example response:
 
 ### Churn Prediction
 
-POST /predict
+**POST /predict**
 
 This endpoint accepts customer data and returns a churn prediction.
 
-Example request:
+**Example Request**
 
-```json
+<pre><code class="json">
 {
   "Gender": "Male",
   "SeniorCitizen": 0,
@@ -142,14 +142,14 @@ Example request:
   "Contract": "Month-to-month",
   "MonthlyCharges": 75.5
 }
-
-Example response:
-
+</code></pre>
+**Example Request**
+<pre><code class="json">
 {
   "churn_prediction": 1,
   "churn_probability": 0.82
 }
-
+</code></pre>
 
 ## Docker Deployment
 
