@@ -105,3 +105,16 @@ def predict(data: CustomerData):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))  # use Render's PORT or default 8000
     uvicorn.run(app, host="0.0.0.0", port=port)
+
+
+
+
+
+
+
+
+
+
+
+
+    
