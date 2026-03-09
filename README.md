@@ -99,8 +99,10 @@ Key outputs include:
 Example artifacts:
 
 reports/
-- Confusion_matrix.png ![Alt text](reports/Confusion_matrix.png)
-- feature_importance.png ![Alt text](reports/feature_importance.png)
+- Confusion_matrix.png 
+![Alt text](reports/Confusion_matrix.png)
+- feature_importance.png 
+![Alt text](reports/feature_importance.png)
 - model_performance.csv 
 
 
