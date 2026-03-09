@@ -18,7 +18,14 @@ model_features = joblib.load(FEATURES_PATH)
 
 num_cols = ["SeniorCitizen", "tenure", "MonthlyCharges"]
 
+from pathlib import Path
+import os
 
+# print("CWD:", os.getcwd())
+# print("MODEL PATH:", MODEL_PATH)
+# print("MODEL EXISTS:", MODEL_PATH.exists())
+# print("ROOT FILES:", list(Path("/opt/render/project/src").iterdir()))
+# print("MODELS FILES:", list(Path("/opt/render/project/src/models").iterdir()))
 
 def process_input(data):
 
