@@ -4,8 +4,10 @@ import joblib
 import pandas as pd
 import os
 logger = logging.getLogger(__name__)
+from pathlib import Path
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # src/
+#Setting import path. 
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 MODEL_PATH = os.path.join(BASE_DIR, "models", "churn_model.pkl")
 SCALER_PATH = os.path.join(BASE_DIR, "models", "scaler.pkl")
 FEATURES_PATH = os.path.join(BASE_DIR, "models", "model_features.pkl")
@@ -13,7 +15,6 @@ FEATURES_PATH = os.path.join(BASE_DIR, "models", "model_features.pkl")
 model = joblib.load(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)
 model_features = joblib.load(FEATURES_PATH)
-
 
 num_cols = ["SeniorCitizen", "tenure", "MonthlyCharges"]
 
