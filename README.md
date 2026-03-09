@@ -45,6 +45,7 @@ These tools enable building a production-style machine learning service with rep
 
 ## Project Structure
 
+```
 Customer_Churn_Prediction
 │
 ├── src/                # FastAPI application
@@ -58,6 +59,8 @@ Customer_Churn_Prediction
 ├── Makefile
 ├── requirements.txt
 └── README.md
+```
+
 
 
 ## Machine Learning Pipeline
@@ -96,9 +99,9 @@ Key outputs include:
 Example artifacts:
 
 reports/
-- Confusion_matrix.png
-- feature_importance.png
-- model_performance.csv
+- Confusion_matrix.png ![Alt text](reports\Confusion_matrix.png)
+- feature_importance.png ![Alt text](reports\feature_importance.png)
+- model_performance.csv 
 
 
 ## API Endpoints
@@ -117,6 +120,8 @@ Example response:
   "status": "healthy"
 }
 
+
+
 ### Churn Prediction
 
 POST /predict
@@ -125,6 +130,7 @@ This endpoint accepts customer data and returns a churn prediction.
 
 Example request:
 
+```json
 {
   "Gender": "Male",
   "SeniorCitizen": 0,
@@ -183,7 +189,7 @@ Artifacts are stored in:
 
 reports/Model_Latency_&_User_Logs
 
-- latency_plot.png
+- latency_plot.png ![Alt text](reports\Model_Latency_&_User_Logs\latency_plot.png)
 - load_test_logs.csv
 
 Average API latency during testing: ~80 milliseconds.
