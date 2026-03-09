@@ -1,3 +1,5 @@
+![CI](https://github.com/ProfessionalMario/Customer_Churn_Prediction/actions/workflows/ci.yml/badge.svg)
+
 # Customer Churn Prediction API
 
 An end-to-end machine learning system that predicts **customer churn in a telecom company** and exposes the model through a production-ready API.
