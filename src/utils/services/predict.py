@@ -7,11 +7,12 @@ logger = logging.getLogger(__name__)
 from pathlib import Path
 
 #Setting import path. 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-MODEL_PATH = os.path.join(BASE_DIR, "models", "churn_model.pkl")
+
+BASE_DIR = Path(__file__).resolve().parents[3]
+MODEL_PATH = BASE_DIR / "models" / "churn_model.pkl"
 SCALER_PATH = os.path.join(BASE_DIR, "models", "scaler.pkl")
 FEATURES_PATH = os.path.join(BASE_DIR, "models", "model_features.pkl")
-
+# print("==============",MODEL_PATH,"========================")
 model = joblib.load(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)
 model_features = joblib.load(FEATURES_PATH)
