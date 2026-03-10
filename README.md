@@ -13,22 +13,18 @@ The system includes:
 - containerization
 - load testing and performance benchmarking
 
-## Problem Statement
+## Business Problem
 
-Customer churn is a major challenge for subscription-based businesses such as telecommunications companies. When customers discontinue their services, companies lose recurring revenue and incur additional costs to acquire new customers.
+Subscription-based companies such as telecom providers face significant revenue loss due to customer churn. Identifying customers likely to churn enables businesses to take proactive retention actions such as targeted promotions or improved support.
 
-Predicting which customers are likely to churn allows businesses to take proactive retention measures such as targeted promotions, improved support, or service upgrades.
-
-The goal of this project is to build a machine learning system capable of predicting whether a customer is likely to churn based on demographic information, service usage patterns, and account-related attributes.
+This project builds a machine learning model to predict customer churn using customer demographics, service usage, and account-related features.
 
 
 ## Project Overview
 
-This project implements a machine learning system that predicts customer churn using historical telecom customer data.
+This project implements an end-to-end machine learning pipeline for customer churn prediction using historical telecom data.
 
-The trained model is deployed through a REST API built with FastAPI, enabling real-time predictions for new customer data.
-
-The project demonstrates an end-to-end machine learning workflow including data preprocessing, feature engineering, model training, evaluation, containerized deployment, and API load testing.
+The trained model is deployed via a FastAPI REST API to enable real-time predictions. The workflow includes data preprocessing, feature engineering, model training, evaluation, containerized deployment with Docker, and API load testing.
 
 
 ## Tech Stack
