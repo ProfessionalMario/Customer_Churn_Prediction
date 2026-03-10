@@ -88,7 +88,9 @@ These artifacts ensure that the same preprocessing steps used during training ar
 | XGBoost | 0.805 |
 | K-Nearest Neighbors | 0.781 |
 | Decision Tree | 0.657 |
+
 ### Key Insights
+
 - Evaluated **five different machine learning algorithms** to compare predictive performance.
 - **ROC-AUC** was used as the primary evaluation metric for this binary classification problem.
 - **Logistic Regression achieved the highest ROC-AUC score (0.834)** and was selected as the final model for deployment.
