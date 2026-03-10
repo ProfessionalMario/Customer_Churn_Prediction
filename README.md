@@ -79,6 +79,21 @@ models/
 
 These artifacts ensure that the same preprocessing steps used during training are applied during inference.
 
+### Model Performance Comparison
+
+| Model | ROC-AUC Score |
+|------|---------------|
+| Logistic Regression | **0.834** |
+| Random Forest | 0.814 |
+| XGBoost | 0.805 |
+| K-Nearest Neighbors | 0.781 |
+| Decision Tree | 0.657 |
+### Key Insights
+- Evaluated **five different machine learning algorithms** to compare predictive performance.
+- **ROC-AUC** was used as the primary evaluation metric for this binary classification problem.
+- **Logistic Regression achieved the highest ROC-AUC score (0.834)** and was selected as the final model for deployment.
+
+
 
 ## Model Evaluation
 
