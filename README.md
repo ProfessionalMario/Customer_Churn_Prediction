@@ -102,11 +102,11 @@ Example artifacts:
 
 reports/
 - Confusion_matrix.png 
+<img src="reports/Confusion_matrix.png" width="400">
 
-![Alt text](reports/Confusion_matrix.png)
-- feature_importance.png 
+- feature_importance.png
+<img src="reports/feature_importance.png" width="400">
 
-![Alt text](reports/feature_importance.png)
 - model_performance.csv 
 
 
@@ -195,7 +195,7 @@ Artifacts are stored in:
 
 reports/Model_Latency_&_User_Logs
 
-- latency_plot.png ![Alt text](reports/Model_Latency_&_User_Logs/latency_plot.png)
+- latency_plot.png <img src="reports/Model_Latency_&_User_Logs/latency_plot.png" width="400">
 - load_test_logs.csv
 
 Average API latency during testing: ~80 milliseconds.
